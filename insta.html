@@ -1,0 +1,21 @@
+<html>
+<head>
+<script type="text/javascript" src="instafeed.min.js"></script>
+<script type="text/javascript">
+
+var feed = new Instafeed({
+        get: 'user',
+        userId: 'YOUR_USER_ID',
+        //get userId from: http://www.otzberg.net/iguserid/index.php
+        accessToken: 'YOUR_ACCESS_TOKEN',
+        //get accessToken from: http://instagram.pixelunion.net/
+        template:'<a href={{link}} target="_blank"><img src={{image}} alt=""/></a>'
+    });
+    feed.run();
+</script>
+</head>
+
+<body>
+<div id="instafeed"></div>	
+</body>
+</html>
